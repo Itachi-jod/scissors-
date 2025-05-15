@@ -1,6 +1,4 @@
 
-README.md
-
 Rock Paper Scissors Game
 
 A simple Rock Paper Scissors game built with HTML, CSS, and JavaScript. The game allows you to play against the computer with a clean interface and fun animations.
@@ -86,6 +84,4 @@ Instagram: yours_ashib
 
 
 ---
-
-Feel free to customize the README for your needs!
 
