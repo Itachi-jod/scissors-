@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors - Real Mode</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Rock Paper Scissors</h1>
+  <audio id="bg-music" autoplay loop>
+    <source src="https://files.catbox.moe/j7lx7i.mp3" type="audio/mpeg">
+  </audio>
+
+  <h1>Rock Paper Scissors 🎮</h1>
+  <div class="game">
     <div class="choices">
-      <button onclick="play('rock')"><i class="fas fa-hand-rock"></i><span>Rock</span></button>
-      <button onclick="play('paper')"><i class="fas fa-hand-paper"></i><span>Paper</span></button>
-      <button onclick="play('scissors')"><i class="fas fa-hand-scissors"></i><span>Scissors</span></button>
+      <button class="choice" data-choice="rock">✊ Rock</button>
+      <button class="choice" data-choice="paper">✋ Paper</button>
+      <button class="choice" data-choice="scissors">✌️ Scissors</button>
     </div>
-    <div class="results">
-      <p id="player-choice"></p>
-      <p id="computer-choice"></p>
-      <h2 id="winner"></h2>
+
+    <div class="result">
+      <div class="player-choice">You: ❓</div>
+      <div class="computer-choice">Computer: ❓</div>
+      <div class="outcome">Make your move!</div>
     </div>
   </div>
+
+  <footer>© Made by Lord Itachi</footer>
   <script src="script.js"></script>
 </body>
 </html>
